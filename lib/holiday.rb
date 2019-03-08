@@ -96,7 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |holiday,supply|
       array = []
       if supply.include?("BBQ")
-        array << holiday
+        array.push(holiday)
         puts array
       end
     end
