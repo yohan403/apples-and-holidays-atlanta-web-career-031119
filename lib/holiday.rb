@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
         end
         puts array.join(" ") + ":" + supply.map { |i| " " + i.to_s}.join(",")
       else
-        puts holiday.to_s.capitalize! + ":" + supply.map { |i| " " + i.to_s}.join(",")
+        puts "  " + holiday.to_s.capitalize! + ":" + supply.map { |i| " " + i.to_s}.join(",")
       end
     end
   end
