@@ -76,7 +76,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.capitalize.to_s + ":"
     holiday.each do |holiday,supply|
       if holiday.to_s.include? "_"
-        holiday.to_s.split("_").collect do |word|
+        array = holiday.to_s.split("_")
+        array.collect do |word|
           cap_holiday = word.capitalize!
         end
         puts cap_holiday
