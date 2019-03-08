@@ -96,6 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |holiday,supply|
       if supply.include?("BBQ")
         puts holiday.to_s
+        return holiday.to_s
       end
     end
   end
